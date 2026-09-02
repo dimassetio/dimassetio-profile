@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 800" role="img" aria-labelledby="title desc">
+  <title id="title">SirkelBus project placeholder</title>
+  <desc id="desc">A branded placeholder awaiting an approved product screenshot.</desc>
+  <rect width="1280" height="800" rx="36" fill="#F7FAFF"/>
+  <circle cx="1120" cy="700" r="240" fill="#DBEAFE"/>
+  <path d="M0 630C250 510 350 730 650 610s370-160 630-30v220H0Z" fill="#FEF3C7"/>
+  <rect x="160" y="105" width="350" height="610" rx="48" fill="#fff" stroke="#CBD5E1" stroke-width="4"/>
+  <rect x="196" y="160" width="278" height="190" rx="24" fill="#EFF6FF"/>
+  <rect x="196" y="384" width="220" height="30" rx="15" fill="#DBEAFE"/>
+  <rect x="196" y="438" width="278" height="22" rx="11" fill="#E6EAF0"/>
+  <rect x="196" y="482" width="240" height="22" rx="11" fill="#E6EAF0"/>
+  <rect x="196" y="565" width="278" height="62" rx="16" fill="#2563EB"/>
+  <text x="620" y="330" fill="#172033" font-family="Arial, sans-serif" font-size="64" font-weight="700">SirkelBus</text>
+  <text x="620" y="385" fill="#667085" font-family="Arial, sans-serif" font-size="28">Transport booking</text>
+  <rect x="620" y="440" width="420" height="24" rx="12" fill="#DBEAFE"/>
+  <rect x="620" y="490" width="350" height="24" rx="12" fill="#E6EAF0"/>
+</svg>

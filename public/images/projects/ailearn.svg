@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 800" role="img" aria-labelledby="title desc">
+  <title id="title">AiLearn project placeholder</title>
+  <desc id="desc">A branded placeholder awaiting an approved product screenshot.</desc>
+  <rect width="1280" height="800" rx="36" fill="#FFFDF8"/>
+  <circle cx="170" cy="120" r="210" fill="#FEF3C7"/>
+  <circle cx="1120" cy="690" r="250" fill="#DBEAFE"/>
+  <rect x="110" y="100" width="1060" height="600" rx="30" fill="#fff" stroke="#CBD5E1" stroke-width="3"/>
+  <rect x="160" y="155" width="610" height="490" rx="22" fill="#F7FAFF"/>
+  <rect x="210" y="220" width="350" height="32" rx="16" fill="#2563EB"/>
+  <rect x="210" y="290" width="480" height="24" rx="12" fill="#DBEAFE"/>
+  <rect x="210" y="340" width="420" height="24" rx="12" fill="#E6EAF0"/>
+  <rect x="820" y="155" width="300" height="490" rx="22" fill="#EFF6FF"/>
+  <circle cx="880" cy="225" r="28" fill="#2563EB"/>
+  <rect x="930" y="207" width="130" height="18" rx="9" fill="#CBD5E1"/>
+  <rect x="860" y="295" width="210" height="72" rx="18" fill="#fff"/>
+  <rect x="890" y="415" width="190" height="86" rx="18" fill="#DBEAFE"/>
+  <text x="210" y="560" fill="#172033" font-family="Arial, sans-serif" font-size="56" font-weight="700">AiLearn</text>
+  <text x="210" y="610" fill="#667085" font-family="Arial, sans-serif" font-size="25">Interactive learning</text>
+</svg>
