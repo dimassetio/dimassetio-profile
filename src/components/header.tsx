@@ -4,6 +4,7 @@ import Link from "next/link";
 import logo from "@/app/logo.png";
 import { navigation } from "@/content/site";
 import { MobileNav } from "@/components/mobile-nav";
+import { SectionLink } from "@/components/section-link";
 import { ThemeToggle } from "@/components/theme-toggle";
 
 export function Header() {
@@ -14,12 +15,12 @@ export function Header() {
           <Image src={logo} alt="" width={46} height={46} priority />
         </Link>
         <nav className="desktop-nav" aria-label="Primary navigation">
-          {navigation.map((item) => <Link key={item.href} href={item.href}>{item.label}</Link>)}
+          {navigation.map((item) => <SectionLink key={item.href} href={item.href}>{item.label}</SectionLink>)}
         </nav>
         <ThemeToggle />
-        <Link className="button button-primary header-cta" href="/#contact">
+        <SectionLink className="button button-primary header-cta" href="/#contact">
           Let&apos;s talk <ArrowUpRight aria-hidden="true" />
-        </Link>
+        </SectionLink>
         <MobileNav />
       </div>
     </header>

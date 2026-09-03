@@ -1,6 +1,6 @@
 import { ArrowDownRight, ArrowRight } from "lucide-react";
 import { Portrait } from "@/components/portrait";
-import { TrackedLink } from "@/components/tracked-link";
+import { SectionLink } from "@/components/section-link";
 
 export function Hero() {
   return (
@@ -18,9 +18,14 @@ export function Hero() {
             <a className="button button-secondary" href="#work">
               See my work <ArrowDownRight aria-hidden="true" />
             </a>
-            <TrackedLink className="button button-primary" href="#contact" event="contact_cta_clicked" eventData={{ location: "hero" }}>
+            <SectionLink
+              className="button button-primary"
+              href="#contact"
+              trackingEvent="contact_cta_clicked"
+              trackingData={{ location: "hero" }}
+            >
               Let&apos;s connect <ArrowRight aria-hidden="true" />
-            </TrackedLink>
+            </SectionLink>
           </div>
         </div>
         <Portrait />

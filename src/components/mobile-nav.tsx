@@ -1,9 +1,9 @@
 "use client";
 
 import { Menu, X } from "lucide-react";
-import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import { navigation } from "@/content/site";
+import { SectionLink } from "@/components/section-link";
 
 export function MobileNav() {
   const [open, setOpen] = useState(false);
@@ -43,18 +43,18 @@ export function MobileNav() {
         >
           <nav aria-label="Mobile navigation">
             {navigation.map((item, index) => (
-              <Link
+              <SectionLink
                 key={item.href}
                 ref={index === 0 ? firstLinkRef : undefined}
                 href={item.href}
                 onClick={() => close()}
               >
                 {item.label}
-              </Link>
+              </SectionLink>
             ))}
-            <Link className="button button-primary" href="/#contact" onClick={() => close()}>
+            <SectionLink className="button button-primary" href="/#contact" onClick={() => close()}>
               Let&apos;s talk
-            </Link>
+            </SectionLink>
           </nav>
         </div>
       ) : null}

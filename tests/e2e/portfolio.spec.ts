@@ -40,6 +40,26 @@ test("projects with multiple gallery images expose carousel controls", async ({ 
   await expect(page.getByText(`Transport booking · 2/${imageCount}`)).toBeVisible();
 });
 
+test("header contact links scroll to the contact section", async ({ page }) => {
+  await page.setViewportSize({ width: 1280, height: 720 });
+  await page.goto("/");
+
+  const scrollPosition = () => page.evaluate(() => window.scrollY);
+
+  await page.getByRole("link", { name: "Let's talk", exact: true }).click();
+  await expect(page).toHaveURL(/#contact$/);
+  await expect.poll(scrollPosition).toBeGreaterThan(500);
+  await expect(page.getByRole("heading", { name: "Have a role or product in mind? Let's talk." })).toBeVisible();
+
+  await page.evaluate(() => window.scrollTo(0, 0));
+  await page.getByRole("link", { name: "Contact", exact: true }).click();
+  await expect.poll(scrollPosition).toBeGreaterThan(500);
+
+  await page.evaluate(() => window.scrollTo(0, 0));
+  await page.getByRole("link", { name: "Let's connect", exact: true }).click();
+  await expect.poll(scrollPosition).toBeGreaterThan(500);
+});
+
 test("case study routes are navigable and unknown routes are branded", async ({ page }) => {
   await page.goto("/work/aether");
   await expect(page.getByRole("heading", { level: 1, name: "Aether" })).toBeVisible();
